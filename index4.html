@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ShopSphere Pro</title>
+
+<link rel="stylesheet" href="style4.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar">
+
+<div class="logo">
+🛍 ShopSphere Pro
+</div>
+
+<ul class="nav-links">
+
+<li>
+<a href="#" onclick="showSection('home')">
+Home
+</a>
+</li>
+
+<li>
+<a href="#" onclick="showSection('products')">
+Products
+</a>
+</li>
+
+<li>
+<a href="#" onclick="showSection('cart')">
+Cart
+<span id="cartCount">0</span>
+</a>
+</li>
+
+</ul>
+
+</nav>
+
+<!-- Home Page -->
+
+<section id="home" class="page active-page">
+
+<div class="hero">
+
+<h1>Premium Shopping Experience</h1>
+
+<p>
+Discover Electronics, Fashion, Beauty,
+Accessories and much more.
+</p>
+
+<button onclick="showSection('products')">
+Explore Products
+</button>
+
+</div>
+
+</section>
+
+<!-- Products Page -->
+
+<section id="products" class="page">
+
+<h2>Our Products</h2>
+
+<div class="controls">
+
+<input
+type="text"
+id="searchInput"
+placeholder="🔍 Search Products..."
+onkeyup="searchProducts()">
+
+<select
+id="categoryFilter"
+onchange="filterProducts()">
+
+<option value="all">
+All Categories
+</option>
+
+<option value="Electronics">
+Electronics
+</option>
+
+<option value="Accessories">
+Accessories
+</option>
+
+<option value="Fashion">
+Fashion
+</option>
+
+<option value="Beauty">
+Beauty
+</option>
+
+</select>
+
+</div>
+
+<div
+id="productContainer"
+class="product-grid">
+
+</div>
+
+</section>
+
+<!-- Cart Page -->
+
+<section id="cart" class="page">
+
+<h2>Shopping Cart</h2>
+
+<div id="cartItems">
+
+</div>
+
+<h3 id="totalPrice">
+Total: ₹0
+</h3>
+
+</section>
+
+<!-- Footer -->
+
+<footer style="text-align:center;padding:20px;">
+© 2026 ShopSphere Pro | Modern E-Commerce Catalog
+</footer>
+
+<script src="products.js"></script>
+<script src="script3.js"></script>
+
+</body>
+
+</html>
